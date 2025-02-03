@@ -1,0 +1,15 @@
+body {
+    background-color: darkblue;
+    align-items: center;
+}
+
+optionsbar {
+    size: 50px;
+    border-radius: 10%;
+    color: black;
+    
+}
+
+particles-js {
+    
+}
