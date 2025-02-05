@@ -3,13 +3,99 @@ body {
     align-items: center;
 }
 
-optionsbar {
-    size: 50px;
-    border-radius: 10%;
-    color: black;
+.optionsbar {
+    transition: 0.7s ease;
+    display: flex;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: 25%;
+    height: 10%;
+    background-color: rgba(62, 62, 62, 0.4); 
+    backdrop-filter: blur(10px);
+    border-radius: 22px;
+    z-index: 1;
+    gap: 3%;
+    align-content: center;
+    justify-content: center;
+}
+
+.optionsbar:hover{
+    transition: 0.7s ease;
+    display: flex;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    width: 28%;
+    height: 12%;
+    background-color: rgba(62, 62, 62, 0.4); 
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    z-index: 1;
+    gap: 2%;
+    align-content: end;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+    .barbutton {
+        transition: 0.3s ease;
+        border: none;
+        border-radius: 19px;
+        font-family: "Rubik", sans-serif;
+        background-color: rgb(5, 43, 148);
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 20px 14px;
+        z-index: 3;
+        align-self: center;
+    }
+    .barbutton:hover {
+        transition: 0.3s ease;
+        border: 2px;
+        border-style: ridge;
+        border-color: blue;
+        border-radius: 16px;
+        font-family: "Rubik", sans-serif;
+        background-color: rgb(5, 43, 148);
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        z-index: 3;
+        align-self: center;
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+    }
+    .barbutton:hover {
+        transition: 0.7s ease;
+        padding: 20px 36px;
+    }
+}
+
+.barbutton {
+    transition: 0.3s ease;
+    border: none;
+    border-radius: 20px;
+    font-family: sans-serif;
+    background-color: rgb(1, 39, 143);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 14px 14px;
+    z-index: 3;
+    align-self: center;
+    border-color: lightskyblue;
+}
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    opacity: 75%;
     
 }
 
-particles-js {
-    
+.ct:hover {
+    color: lightblue;
+    font-size: 30px;
 }
